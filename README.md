@@ -1,5 +1,7 @@
 test app to create nft on ERC721PresetMinterPauserAutoId openzeppelin contract
 
+- create project on https://infura.io/
+- save projectId to secret
 
 start truffle
 ```
