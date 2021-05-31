@@ -9,12 +9,8 @@ test app to create nft on ERC721PresetMinterPauserAutoId openzeppelin contract
 create nft:
 ```
 migrate
-
 nft = await ERC721PresetMinterPauserAutoId.deployed()
-
-
 await nft.mint("<account_address>")
-
 ```
 
 check nft on opensea 
