@@ -1,12 +1,10 @@
 test app to create nft on ERC721PresetMinterPauserAutoId openzeppelin contract
 
 - create project on https://infura.io/
-- save projectId to secret
+- save `projectId` to `secrets.json`
+- run `yarn run truffle develop`
+- save `mnemonic` to `secrets.json`
 
-start truffle
-```
-yarn run truffle develop
-```
 
 create nft:
 ```
@@ -14,15 +12,12 @@ migrate
 
 nft = await ERC721PresetMinterPauserAutoId.deployed()
 
-# 0x2c2Ad69353466eD58bC6694163908A533173cD4A
+
 await nft.mint("<account_address>")
 
 ```
 
-deploy to rinkedby 
+check nft on opensea 
 ```
-touch .secret
-# then add memonic to the .secret
-
-yarn run truffle console --network rinkeby
+https://rinkeby-api.opensea.io/asset/<account_address>/<token_id>/validate/
 ```
